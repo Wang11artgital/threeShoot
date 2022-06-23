@@ -1,5 +1,5 @@
-import { Object3D, Camera, Vector3, Quaternion, Raycaster } from './libs/three137/three.module.js';
-import { JoyStick } from './libs/JoyStick.js';
+import { Object3D, Camera, Vector3, Quaternion, Raycaster } from '../../libs/three137/three.module.js';
+import { JoyStick } from '../../libs/JoyStick.js';
 //import { Game } from './Game.js';
 
 class Controller{
@@ -40,7 +40,7 @@ class Controller{
 
         this.checkForGamepad();
 
-        if(true){// 'ontouchstart' in document.documentElement)
+        if('ontouchstart' in document.documentElement){
             const options1 = {
                 left: true,
                 app: this,

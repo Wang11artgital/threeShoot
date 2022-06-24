@@ -1,9 +1,9 @@
-import * as THREE from '../../libs/three137/three.module.js';
-import { GLTFLoader } from '../../libs/three137/GLTFLoader.js';
-import { RGBELoader } from '../../libs/three137/RGBELoader.js';
+import * as THREE from '../libs/three137/three.module.js';
+import { GLTFLoader } from '../libs/three137/GLTFLoader.js';
+import { RGBELoader } from '../libs/three137/RGBELoader.js';
 import { NPCHandler } from './NPCHandler.js';
-import { LoadingBar } from '../../libs/LoadingBar.js';
-import { Pathfinding } from '../../libs/pathfinding/Pathfinding.js';
+import { LoadingBar } from '../libs/LoadingBar.js';
+import { Pathfinding } from '../libs/pathfinding/Pathfinding.js';
 import { User } from './User.js';
 import { Controller } from './Controller.js';
 
@@ -17,7 +17,7 @@ class Game{
         this.loadingBar = new LoadingBar();
         this.loadingBar.visible = false;
 
-		this.assetsPath = '../../assets/';
+		this.assetsPath = '../assets/';
         
 		this.camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 500 );
 		this.camera.position.set( -10.6, 1.6, -1.46 );

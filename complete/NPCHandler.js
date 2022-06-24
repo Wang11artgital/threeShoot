@@ -1,7 +1,7 @@
 import {NPC} from './NPC.js';
-import {GLTFLoader} from '../../libs/three137/GLTFLoader.js';
-import {DRACOLoader} from '../../libs/three137/DRACOLoader.js';
-import {Skeleton, Raycaster} from '../../libs/three137/three.module.js';
+import {GLTFLoader} from '../libs/three137/GLTFLoader.js';
+import {DRACOLoader} from '../libs/three137/DRACOLoader.js';
+import {Skeleton, Raycaster} from '../libs/three137/three.module.js';
 
 class NPCHandler{
     constructor( game ){

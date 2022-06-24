@@ -6,9 +6,9 @@ import { Group,
          AnimationMixer, 
          SphereGeometry, 
          MeshBasicMaterial, 
-         Mesh } from '../../libs/three137/three.module.js';
-import { GLTFLoader } from '../../libs/three137/GLTFLoader.js';
-import { DRACOLoader } from '../../libs/three137/DRACOLoader.js';
+         Mesh } from '../libs/three137/three.module.js';
+import { GLTFLoader } from '../libs/three137/GLTFLoader.js';
+import { DRACOLoader } from '../libs/three137/DRACOLoader.js';
 
 class User{
     constructor(game, pos, heading){

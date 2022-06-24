@@ -126,11 +126,11 @@ class Game{
     }
     
     setEnvironment(){
-        const loader = new RGBELoader().setPath(this.assetsPath);
+        const loader = new RGBELoader();
         const pmremGenerator = new THREE.PMREMGenerator( this.renderer );
         pmremGenerator.compileEquirectangularShader();
         
-        loader.load( 'hdr/factory.hdr', 
+        loader.load( '../assets/hdr/factory.hdr', 
 		texture => {
           const envMap = pmremGenerator.fromEquirectangular( texture ).texture;
           pmremGenerator.dispose();

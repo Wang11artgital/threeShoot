@@ -143,7 +143,7 @@ class Game{
 			this.loadingBar.update( 'envmap', xhr.loaded, xhr.total );
 		},
 		err => {
-            console.error( err.message );
+            
         } );
     }
     
